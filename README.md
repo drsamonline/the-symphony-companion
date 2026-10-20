@@ -1,27 +1,21 @@
 <div align="center">
-
-# The Symphony Companion
-
-**A pocket companion to _The Symphony of the Present: Waking Up from the Illusion of Tomorrow_ by Dr. Sohil Momin.**
-
-Not the book — a companion. The book's ideas as cards, its practices as a
-checklist, a breathing timer, a gratitude journal, and its attributed quotations.
-
-[![Live app](https://img.shields.io/badge/GitHub%20Pages-live-2ea44f
-[![License](https://img.shields.io/badge/License-Personal%20use%20only-b31b1b)](
-[![PWA](https://img.shields.io/badge/PWA-installable-0e6b76
-[![Offline](https://img.shields.io/badge/Works-offline-2f96a1)](
-[![Privacy](https://img.shields.io/badge/Privacy-no%20accounts%2C%20no%20tracking-0e6b76)](
-[![Tabs](https://img.shields.io/badge/Tabs-CSS--only%20(no%20JS%20needed)-d9a24b)](
-[![Made with](https://img.shields.io/badge/Made%20with-HTML%20%C2%B7%20CSS%20%C2%B7%20JS-0e6b76)](
-[![Book](https://img.shields.io/badge/Book-The%20Symphony%20of%20the%20Present-d9a24b)](
-
-<p align="center">
-  <img src="docs/screenshot-today.png" width="215" alt="Today screen">
-  <img src="docs/screenshot-chapters.png" width="215" alt="Chapters screen">
-  <img src="docs/screenshot-breathe.png" width="215" alt="Breathe screen">
+<h1>The Symphony Companion</h1>
+<p><b>A pocket companion to <i>The Symphony of the Present: Waking Up from the Illusion of Tomorrow</i> by Dr. Sohil Momin.</b></p>
+<p>Not the book — a companion. The book's ideas as cards, its practices as a checklist, a breathing timer, a gratitude journal, and its attributed quotations.</p>
+<p>
+<a href="https://drsamonline.github.io/the-symphony-companion/"><img src="https://img.shields.io/badge/Live%20app-online-2ea44f?logo=githubpages&amp;logoColor=white" alt="Live app"></a>
+<a href="https://github.com/drsamonline/the-symphony-companion/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Personal%20use%20only-b31b1b" alt="License"></a>
+<a href="https://drsamonline.github.io/the-symphony-companion/"><img src="https://img.shields.io/badge/PWA-installable-0e6b76?logo=pwa&amp;logoColor=white" alt="PWA installable"></a>
+<img src="https://img.shields.io/badge/Works-offline-2f96a1" alt="Works offline">
+<img src="https://img.shields.io/badge/Privacy-no%20accounts%2C%20no%20tracking-0e6b76" alt="Privacy">
+<img src="https://img.shields.io/badge/Tabs-pure%20CSS-d9a24b" alt="Pure CSS tabs">
+<img src="https://img.shields.io/badge/Made%20with-HTML%20%26%20CSS%20%26%20JS-0e6b76" alt="Made with HTML, CSS and JS">
 </p>
-
+<p>
+<img src="docs/screenshot-today.png" width="200" alt="Today screen">
+<img src="docs/screenshot-chapters.png" width="200" alt="Chapters screen">
+<img src="docs/screenshot-breathe.png" width="200" alt="Breathe screen">
+</p>
 </div>
 
 ---
@@ -46,7 +40,7 @@ checklist, a breathing timer, a gratitude journal, and its attributed quotations
 | **Quotes** | the book's attributed lines |
 | **About** | the book, the author, and a note on wellbeing |
 
-<p align="center"><img src="docs/screenshot-desktop.png" width="640" alt="Chapters on desktop"></p>
+<p align="center"><img src="docs/screenshot-desktop.png" width="620" alt="Chapters on desktop"></p>
 
 ## Documentation
 
