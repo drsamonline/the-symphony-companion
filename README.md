@@ -21,13 +21,12 @@ Not the book — a companion. The book's ideas as cards, its practices as a chec
 ---
 
 <div align="center">
-<h1>The Symphony Companion</h1>
 <p><b>A pocket companion to <i>The Symphony of the Present: Waking Up from the Illusion of Tomorrow</i> by Dr. Sohil Momin.</b></p>
 <p>Not the book — a companion. The book's ideas as cards, its practices as a checklist, a breathing timer, a gratitude journal, and its attributed quotations.</p>
 <p>
-<a href="https://drsamonline.github.io/the-symphony-companion/"><img src="https://img.shields.io/badge/Live%20app-online-2ea44f" alt="Live app"></a>
+<a href="https://drsamonline.github.io/the-symphony-companion/play/"><img src="https://img.shields.io/badge/Live%20app-online-2ea44f" alt="Live app"></a>
 <a href="https://github.com/drsamonline/the-symphony-companion/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Personal%20use%20only-b31b1b" alt="License"></a>
-<a href="https://drsamonline.github.io/the-symphony-companion/"><img src="https://img.shields.io/badge/PWA-installable-0e6b76" alt="PWA installable"></a>
+<a href="https://drsamonline.github.io/the-symphony-companion/play/"><img src="https://img.shields.io/badge/PWA-installable-0e6b76" alt="PWA installable"></a>
 <img src="https://img.shields.io/badge/Works-offline-2f96a1" alt="Works offline">
 <img src="https://img.shields.io/badge/Privacy-no%20accounts%2C%20no%20tracking-0e6b76" alt="Privacy">
 <img src="https://img.shields.io/badge/Tabs-pure%20CSS-d9a24b" alt="Pure CSS tabs">
@@ -46,7 +45,7 @@ Not the book — a companion. The book's ideas as cards, its practices as a chec
 
 | | |
 |---|---|
-| **Online** | Open **[drsamonline.github.io/the-symphony-companion](https://drsamonline.github.io/the-symphony-companion/)** |
+| **Online** | Open **[drsamonline.github.io/the-symphony-companion](https://drsamonline.github.io/the-symphony-companion/play/)** |
 | **Install (phone)** | Open the link, then **Share ▸ Add to Home Screen** (iOS) or **⋮ ▸ Install app** (Android). It then works offline. |
 | **Offline / local** | Download `index.html` and open it in any browser. The whole app is one self-contained file — fonts, sigils and script are inlined, so it needs no server and no network. |
 
