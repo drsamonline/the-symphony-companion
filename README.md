@@ -6,7 +6,6 @@
 
 Not the book — a companion. The book's ideas as cards, its practices as a checklist, a breathing timer, a gratitude journal, and its attributed quotations.
 
-[**Landing page**](https://drsamonline.github.io/the-symphony-companion/) &nbsp;·&nbsp; [**Live demo**](https://drsamonline.github.io/the-symphony-companion/play/) &nbsp;·&nbsp; [**Documentation**](DOCUMENTATION.md)
 
 [![Landing page](https://img.shields.io/badge/Landing%20page-online-2ea44f
 [![Live demo](https://img.shields.io/badge/Live%20demo-play-4c1d95)](https://drsamonline.github.io/the-symphony-companion/play/)
@@ -45,7 +44,7 @@ Not the book — a companion. The book's ideas as cards, its practices as a chec
 
 | | |
 |---|---|
-| **Online** | Open **[drsamonline.github.io/the-symphony-companion](https://drsamonline.github.io/the-symphony-companion/play/)** |
+| **Online** | Open **[drsamonline.github.io/the-symphony-companion/play/](https://drsamonline.github.io/the-symphony-companion/play/)** |
 | **Install (phone)** | Open the link, then **Share ▸ Add to Home Screen** (iOS) or **⋮ ▸ Install app** (Android). It then works offline. |
 | **Offline / local** | Download `index.html` and open it in any browser. The whole app is one self-contained file — fonts, sigils and script are inlined, so it needs no server and no network. |
 
