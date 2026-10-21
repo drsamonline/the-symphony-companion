@@ -1,11 +1,33 @@
 <div align="center">
+
+# The Symphony Companion
+
+**A pocket companion to _The Symphony of the Present: Waking Up from the Illusion of Tomorrow_ by Dr. Sohil Momin.**
+
+Not the book — a companion. The book's ideas as cards, its practices as a checklist, a breathing timer, a gratitude journal, and its attributed quotations.
+
+[**Landing page**](https://drsamonline.github.io/the-symphony-companion/) &nbsp;·&nbsp; [**Live demo**](https://drsamonline.github.io/the-symphony-companion/play/) &nbsp;·&nbsp; [**Documentation**](DOCUMENTATION.md)
+
+[![Landing page](https://img.shields.io/badge/Landing%20page-online-2ea44f
+[![Live demo](https://img.shields.io/badge/Live%20demo-play-4c1d95)](https://drsamonline.github.io/the-symphony-companion/play/)
+[![License](https://img.shields.io/badge/License-Personal%20use%20only-b31b1b)](https://github.com/drsamonline/the-symphony-companion/blob/main/LICENSE)
+[![PWA](https://img.shields.io/badge/PWA-installable-0e6b76
+![Works offline](https://img.shields.io/badge/Works-offline-2f96a1)
+![Privacy](https://img.shields.io/badge/Privacy-no%20accounts%2C%20no%20tracking-0e6b76)
+![Pure CSS tabs](https://img.shields.io/badge/Tabs-pure%20CSS-d9a24b)
+
+</div>
+
+---
+
+<div align="center">
 <h1>The Symphony Companion</h1>
 <p><b>A pocket companion to <i>The Symphony of the Present: Waking Up from the Illusion of Tomorrow</i> by Dr. Sohil Momin.</b></p>
 <p>Not the book — a companion. The book's ideas as cards, its practices as a checklist, a breathing timer, a gratitude journal, and its attributed quotations.</p>
 <p>
-<a href="https://drsamonline.github.io/the-symphony-companion/"><img src="https://img.shields.io/badge/Live%20app-online-2ea44f?logo=githubpages&amp;logoColor=white" alt="Live app"></a>
+<a href="https://drsamonline.github.io/the-symphony-companion/"><img src="https://img.shields.io/badge/Live%20app-online-2ea44f" alt="Live app"></a>
 <a href="https://github.com/drsamonline/the-symphony-companion/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Personal%20use%20only-b31b1b" alt="License"></a>
-<a href="https://drsamonline.github.io/the-symphony-companion/"><img src="https://img.shields.io/badge/PWA-installable-0e6b76?logo=pwa&amp;logoColor=white" alt="PWA installable"></a>
+<a href="https://drsamonline.github.io/the-symphony-companion/"><img src="https://img.shields.io/badge/PWA-installable-0e6b76" alt="PWA installable"></a>
 <img src="https://img.shields.io/badge/Works-offline-2f96a1" alt="Works offline">
 <img src="https://img.shields.io/badge/Privacy-no%20accounts%2C%20no%20tracking-0e6b76" alt="Privacy">
 <img src="https://img.shields.io/badge/Tabs-pure%20CSS-d9a24b" alt="Pure CSS tabs">
