@@ -209,9 +209,11 @@ footer .fine{font-size:.76rem;color:var(--faint);max-width:64ch;margin:20px auto
 @media(prefers-reduced-motion:reduce){
   *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
 }
-.reveal{opacity:0;transform:translateY(22px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
-.reveal.in{opacity:1;transform:none}
+.reveal{transition:opacity 1s var(--ease),transform 1s var(--ease)}
+html.js .reveal{opacity:0;transform:translateY(22px)}
+html.js .reveal.in{opacity:1;transform:none}
 </style>
+<script>document.documentElement.className += ' js';</script>
 </head>
 <body>
 <div class="sky" aria-hidden="true"></div>
@@ -455,11 +457,20 @@ footer .fine{font-size:.76rem;color:var(--faint);max-width:64ch;margin:20px auto
 <script>
 (function(){
   var els=document.querySelectorAll('.reveal');
-  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  function revealAll(){els.forEach(function(e){e.classList.add('in')});}
+  function revealInView(){ var vh=window.innerHeight||document.documentElement.clientHeight;
+    els.forEach(function(e){ var r=e.getBoundingClientRect(); if(r.top<vh+40&&r.bottom>-40) e.classList.add('in'); }); }
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduce||!('IntersectionObserver' in window)){revealAll();return;}
   var io=new IntersectionObserver(function(entries){
     entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
   },{threshold:.12,rootMargin:'0px 0px -8% 0px'});
   els.forEach(function(e){io.observe(e)});
+  setTimeout(revealInView,1000);
+  setTimeout(revealAll,4000);
+  window.addEventListener('scroll',revealInView,{passive:true});
+  window.addEventListener('resize',revealInView,{passive:true});
+  window.addEventListener('load',function(){ setTimeout(revealInView,200); });
 })();
 </script>
 </body>
