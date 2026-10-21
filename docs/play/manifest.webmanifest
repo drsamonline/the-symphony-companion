@@ -1,0 +1,17 @@
+{
+  "name": "The Symphony Companion",
+  "short_name": "Symphony",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#eef7f9",
+  "theme_color": "#0e6b76",
+  "description": "A pocket companion to The Symphony of the Present by Dr. Sohil Momin. Free for personal use.",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
