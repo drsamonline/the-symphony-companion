@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Not found — The Symphony Companion</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#1e1b4b">
+<link rel="icon" type="image/svg+xml" href="/the-symphony-companion/assets/favicon.svg">
+<style>
+  :root{--ink:#ecebff;--soft:#c9c6f2;--glow:#a78bfa;--glow2:#c4b5fd;--line:rgba(167,139,250,.22)}
+  *{box-sizing:border-box}
+  body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;
+    font-family:"Inter","SF Pro Display",system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-weight:300;
+    color:var(--ink);background:linear-gradient(170deg,#1e1b4b 0%,#2a1a5e 45%,#4c1d95 100%);padding:32px}
+  .box{max-width:520px}
+  svg.orb{width:96px;height:96px;margin-bottom:26px}
+  @keyframes drift{to{transform:rotate(360deg)}}
+  .o1{transform-origin:80px 80px;animation:drift 46s linear infinite}
+  .o2{transform-origin:80px 80px;animation:drift 74s linear infinite reverse}
+  @media(prefers-reduced-motion:reduce){*{animation:none!important}}
+  h1{font-weight:200;font-size:clamp(2rem,7vw,3rem);margin:0 0 14px;letter-spacing:-.02em}
+  p{color:var(--soft);margin:0 0 26px}
+  a.btn{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:12px 26px;color:var(--ink);
+    text-decoration:none;font-size:.9rem;letter-spacing:.06em;transition:.4s}
+  a.btn:hover{border-color:var(--glow);box-shadow:0 0 30px rgba(167,139,250,.35)}
+  a.btn.primary{background:linear-gradient(120deg,rgba(167,139,250,.9),rgba(196,181,253,.65));color:#1a1440;font-weight:500;margin-right:10px;border-color:transparent}
+</style>
+</head>
+<body>
+  <div class="box">
+    <svg class="orb" viewBox="0 0 160 160" aria-hidden="true">
+      <circle cx="80" cy="80" r="70" fill="none" stroke="#a78bfa" stroke-width="1.2" opacity=".6"/>
+      <g class="o1"><ellipse cx="80" cy="80" rx="52" ry="22" fill="none" stroke="#c4b5fd" stroke-width="1.1" opacity=".55"/></g>
+      <g class="o2"><ellipse cx="80" cy="80" rx="22" ry="52" fill="none" stroke="#a78bfa" stroke-width="1.1" opacity=".55"/></g>
+      <circle cx="80" cy="80" r="6" fill="#c4b5fd"/>
+    </svg>
+    <h1>This page has drifted</h1>
+    <p>The page you were looking for is not here. Breathe, and start again.</p>
+    <p>
+      <a class="btn primary" href="/the-symphony-companion/">Back to the landing page</a>
+      <a class="btn" href="/the-symphony-companion/play/">Open the companion</a>
+    </p>
+  </div>
+</body>
+</html>
