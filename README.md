@@ -8,6 +8,7 @@ Not the book — a companion. The book's ideas as cards, its practices as a chec
 
 
 [![Landing page](https://img.shields.io/badge/Landing%20page-online-2ea44f)](https://drsamonline.github.io/the-symphony-companion/)
+[![All projects](https://img.shields.io/badge/All%20projects-hub-4c1d95)](https://drsamonline.github.io/)
 [![Live demo](https://img.shields.io/badge/Live%20demo-play-4c1d95)](https://drsamonline.github.io/the-symphony-companion/play/)
 [![License](https://img.shields.io/badge/License-Personal%20use%20only-b31b1b)](https://github.com/drsamonline/the-symphony-companion/blob/main/LICENSE)
 [![PWA](https://img.shields.io/badge/PWA-installable-0e6b76)](https://drsamonline.github.io/the-symphony-companion/play/)
