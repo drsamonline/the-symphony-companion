@@ -7,10 +7,10 @@
 Not the book — a companion. The book's ideas as cards, its practices as a checklist, a breathing timer, a gratitude journal, and its attributed quotations.
 
 
-[![Landing page](https://img.shields.io/badge/Landing%20page-online-2ea44f
+[![Landing page](https://img.shields.io/badge/Landing%20page-online-2ea44f)](https://drsamonline.github.io/the-symphony-companion/)
 [![Live demo](https://img.shields.io/badge/Live%20demo-play-4c1d95)](https://drsamonline.github.io/the-symphony-companion/play/)
 [![License](https://img.shields.io/badge/License-Personal%20use%20only-b31b1b)](https://github.com/drsamonline/the-symphony-companion/blob/main/LICENSE)
-[![PWA](https://img.shields.io/badge/PWA-installable-0e6b76
+[![PWA](https://img.shields.io/badge/PWA-installable-0e6b76)](https://drsamonline.github.io/the-symphony-companion/play/)
 ![Works offline](https://img.shields.io/badge/Works-offline-2f96a1)
 ![Privacy](https://img.shields.io/badge/Privacy-no%20accounts%2C%20no%20tracking-0e6b76)
 ![Pure CSS tabs](https://img.shields.io/badge/Tabs-pure%20CSS-d9a24b)
