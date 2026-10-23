@@ -366,6 +366,7 @@ footer.app .sig svg{width:40px;height:auto;opacity:.8}
     <footer class="app"><div class="sig"><svg class="sigil-svg" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" role="img" aria-hidden="true"><circle cx="80" cy="80" r="74" fill="none" stroke="#6fbcc4" stroke-width="1.6"/><polygon points="80.0,20.0 95.3,59.0 137.1,61.5 104.7,88.0 115.3,128.5 80.0,106.0 44.7,128.5 55.3,88.0 22.9,61.5 64.7,59.0" fill="none" stroke="#0e6b76" stroke-width="2.4" stroke-linejoin="round"/><circle cx="80" cy="80" r="7" fill="#d9a24b"/></svg></div><p>MATNEO &middot; The Symphony of the Present</p></footer>
   </section>
 </div>
+<script src="web-kit.js"></script>
 <script>
 /* The Symphony Companion — extras only.
    The tabs are pure CSS (radios), so they work with JavaScript off. This script
@@ -374,29 +375,22 @@ footer.app .sig svg{width:40px;height:auto;opacity:.8}
 (function () {
   "use strict";
 
-  // storage that never throws
-  var store = (function () {
-    try {
-      var t = "__symphony_test__";
-      window.localStorage.setItem(t, "1");
-      window.localStorage.removeItem(t);
-      return window.localStorage;
-    } catch (e) {
-      var mem = {};
-      return {
-        getItem: function (k) { return Object.prototype.hasOwnProperty.call(mem, k) ? mem[k] : null; },
-        setItem: function (k, v) { mem[k] = String(v); },
-        removeItem: function (k) { delete mem[k]; }
-      };
+  // Persistence now comes from web-kit's Loom.storage (namespaced under "loom:",
+  // JSON-safe, never throws) instead of a hand-rolled localStorage shim.
+  // A store saved before this change (the legacy un-prefixed "symphony.v1" key)
+  // is migrated into Loom.storage once, on first load - no data loss.
+  try {
+    var legacy = window.localStorage.getItem("symphony.v1");
+    if (legacy != null && Loom.storage.get("symphony.v1", null) == null) {
+      Loom.storage.set("symphony.v1", JSON.parse(legacy));
+      window.localStorage.removeItem("symphony.v1");
     }
-  })();
-
-  var S = {};
-  try { S = JSON.parse(store.getItem("symphony.v1") || "{}") || {}; } catch (e) { S = {}; }
+  } catch (e) {}
+  var S = Loom.storage.get("symphony.v1", {}) || {};
   S.practice = S.practice || {};
   S.streak = S.streak || { last: "", count: 0 };
   S.journal = S.journal || [];
-  function save() { try { store.setItem("symphony.v1", JSON.stringify(S)); } catch (e) {} }
+  function save() { Loom.storage.set("symphony.v1", S); }
 
   function $(s, r) { return (r || document).querySelector(s); }
   function $$(s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); }
