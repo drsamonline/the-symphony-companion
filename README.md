@@ -2,6 +2,12 @@
 
 # The Symphony Companion
 
+<!-- shot:start -->
+
+![Screenshot](docs/shot.png)
+
+<!-- shot:end -->
+
 **A pocket companion to _The Symphony of the Present: Waking Up from the Illusion of Tomorrow_ by Dr. Sohil Momin.**
 
 Not the book — a companion. The book's ideas as cards, its practices as a checklist, a breathing timer, a gratitude journal, and its attributed quotations.
