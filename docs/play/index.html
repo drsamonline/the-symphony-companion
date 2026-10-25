@@ -114,8 +114,8 @@ body{background:#e7f1f3;color:#0f313a;font-family:'EB Garamond',Georgia,serif;fo
 .wrap{max-width:760px;margin:0 auto;padding:0 16px 90px}
 header.app{background:linear-gradient(160deg,#11808c,#0a5a64 55%,#063a41);color:#eef7f9;padding:30px 20px 26px;text-align:center;position:relative;overflow:hidden}
 header.app .frame{position:absolute;inset:8px;border:1px solid rgba(217,162,75,.55);pointer-events:none}
-header.app .crown{width:120px;margin:0 auto 6px;color:#d9a24b}
-header.app .crown svg{width:120px;height:auto}
+header.app .crown{max-width:120px;width:100%;margin:0 auto 6px;color:#d9a24b}
+header.app .crown svg{max-width:120px;width:100%;height:auto}
 header.app h1{font-family:'Cinzel','EB Garamond',serif;font-size:30px;letter-spacing:.04em;margin:8px 0 4px;text-transform:uppercase}
 header.app .sub{font-style:italic;color:#bfe3e6;font-size:16px;margin:0}
 header.app .by{font-family:'Inter',sans-serif;font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:#e6cfa0;margin-top:10px}
@@ -173,7 +173,7 @@ h2.sec{font-family:'Cinzel','EB Garamond',serif;color:#084a53;font-size:24px;let
 .practice .m{font-size:15px;color:#3c5a60;margin-top:2px;display:block}
 .practice.done .m{text-decoration:line-through;opacity:.7}
 .breathe{text-align:center;padding:20px 0}
-.breath-ring{width:230px;height:230px;margin:16px auto;border-radius:50%;background:radial-gradient(circle at 50% 45%,#6fbcc4,#0e6b76);display:flex;align-items:center;justify-content:center;color:#fff;transition:transform 1s ease;transform:scale(.55);box-shadow:0 8px 30px rgba(8,74,83,.25)}
+.breath-ring{max-width:230px;width:100%;height:230px;margin:16px auto;border-radius:50%;background:radial-gradient(circle at 50% 45%,#6fbcc4,#0e6b76);display:flex;align-items:center;justify-content:center;color:#fff;transition:transform 1s ease;transform:scale(.55);box-shadow:0 8px 30px rgba(8,74,83,.25)}
 .breath-ring span{font-family:'Cinzel',serif;font-size:22px;letter-spacing:.06em}
 .breath-ring small{display:block;font-family:'Inter',sans-serif;font-size:12px;letter-spacing:.2em;opacity:.85}
 .preset{font-family:'Inter',sans-serif;font-size:12px;border:1px solid #b7d7dc;background:#f6fbfc;color:#0e6b76;border-radius:999px;padding:7px 14px;margin:4px;cursor:pointer}
@@ -627,6 +627,31 @@ footer.app .sig svg{width:40px;height:auto;opacity:.8}
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", add); else add();
 })();
+</script>
+
+<script>
+/* A SMOKE TEST, not a feature test: did the page come up, are the kits loaded, does storage work.
+   Open with ?test to see it. */
+window.__smokeTest = function () {
+  var out = [];
+  function ok(n, c) { out.push((c ? "PASS " : "FAIL ") + n); }
+  ok("the document rendered", !!document.body && document.body.children.length > 0);
+  ok("a heading is present", !!document.querySelector("h1, h2"));
+  ok("no script threw during load", !window.__bootError);
+  var kits = ["Export","Loom","CryptoKit","Case","Search","Srs","Game","Art","Audio","Ml","UI","Lan","Astro"];
+  var found = kits.filter(function (k) { return window[k]; });
+  ok("at least one kit is loaded (" + (found.join(", ") || "none") + ")", found.length > 0);
+  try { localStorage.setItem("__smoke","1"); ok("storage works", localStorage.getItem("__smoke") === "1"); localStorage.removeItem("__smoke"); }
+  catch (e) { ok("storage works", false); }
+  console.log(out.join("\n"));
+  if (location.search.indexOf("test") >= 0) {
+    var d = document.createElement("pre"); d.textContent = out.join("\n");
+    d.style.cssText = "position:fixed;left:0;right:0;bottom:0;background:#111;color:#eee;padding:12px;font:12px ui-monospace,monospace;z-index:99999;max-height:40vh;overflow:auto;white-space:pre-wrap";
+    document.body.appendChild(d);
+  }
+  return out;
+};
+window.addEventListener("error", function () { window.__bootError = true; });
 </script>
 </body>
 </html>
