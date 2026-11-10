@@ -3,16 +3,16 @@
   "locked": false,
   "files": {
     "README.md": {
-      "sha": "99aaa10c55ad3fa2dd9f532c1f73770972ecb880",
-      "producer": "bootstrap@2026-11-04",
-      "class": "generated",
-      "at": "2026-11-04T20:08:53Z"
+      "sha": "7b279e9f5dfe17b393b9a3cf1f1f4125cb417d0e",
+      "producer": "audit-2026-11-10",
+      "class": "agent",
+      "at": "2026-11-10T13:44:33Z"
     },
     "docs/index.html": {
-      "sha": "ee992e01967e14388b11ba2c1b0ad4f80017d87a",
-      "producer": "bootstrap@2026-11-04",
-      "class": "generated",
-      "at": "2026-11-06T18:55:05Z"
+      "sha": "c417f83208f4efc86652dffb1b8facb336fddf4e",
+      "producer": "audit-2026-11-10",
+      "class": "agent",
+      "at": "2026-11-10T13:44:33Z"
     },
     "docs/play/index.html": {
       "sha": "79af6c6b551e5e57dfdb0226eeadb10ee4a8c8c3",
@@ -27,5 +27,5 @@
       "at": "2026-11-04T20:08:54Z"
     }
   },
-  "updated": "2026-11-06T18:55:05Z"
+  "updated": "2026-11-10T13:44:33Z"
 }
